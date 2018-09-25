@@ -1,0 +1,260 @@
+@charset "UTF-8";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  width: 100%;
+  background: #EAEAE0;
+}
+
+.header{
+  width: 100%;
+  height: 110px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #fff;
+  position: fixed;
+  border-bottom: 1px solid #BDBDBD;
+  z-index: 2; /*重ね順だよ！デフォルトは0だから上にしたい奴だけ1以上を設定してね！*/
+}
+
+.header h1 a{ /*子孫セレクタ！headerの中のh1にだけ適用するよ！*/
+  float: left;
+  color: #00336D;
+  text-decoration: none;
+  font-size: 40px;
+  margin-left: 100px;
+  margin-right: 50px;
+  margin-top: 35px;
+}
+
+
+nav{
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: : 20px;
+}
+
+nav li{ /*子孫セレクタ！navの中のliにだけ適用するよ！*/
+  list-style-type: none;
+  float: left;
+  margin-top: 45px;
+  padding-right: 20px;
+}
+
+nav a{
+  font-size: 16px;
+  display: block;
+  text-decoration: none;
+  color: #00336D;
+  margin: 14px 16px 0;
+  transition: 0.3s;
+  padding-bottom: 22px;
+}
+
+nav a:hover{
+  border-bottom: 6px solid #00336D;
+}
+
+.container{
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.container .mainSlide img{
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+
+.container h2{
+  color: #00336D;/*文字色*/
+  margin: 40px 200px 30px 200px;
+  text-align: center;
+  padding: 0.5em 0;/*上下の余白*/
+  border-top: solid 3px #364e96;/*上線*/
+  border-bottom: solid 3px #364e96;/*下線*/
+}
+
+.container h3{
+  color: #454545;
+  font-size: 20px;
+  /*text-align: center;*/
+  margin-bottom: 20px;
+}
+
+.container .content p{
+  color: #454545;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.container .about .content{
+  margin-left: 200px;
+  margin-right: 20px;
+  float: left;
+}
+
+.container .recode img{
+  margin-left: 200px;
+  margin-right: 30px;
+  float: left;
+}
+
+
+
+.container img{
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container .schedule{
+  margin-top : -110px;
+  padding-top : 110px;
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.container .about{
+  margin-top : -110px;
+  padding-top : 110px;
+  margin-bottom: 90px;
+}
+
+
+.container .recode{
+  margin-top : -110px;
+  padding-top : 110px;
+  margin-bottom: 90px;
+}
+
+.container .access{
+  text-align: center;
+  margin-top : -110px;
+  padding-top : 110px;
+  margin-bottom: 90px;
+}
+
+.container .contact{
+  text-align: center;
+  margin-top : -110px;
+  padding-top : 110px;
+  margin-bottom: 90px;
+}
+
+
+.container .button {
+  color: #00336D;
+  letter-spacing: 3px;
+  margin: 10px;
+  margin-left: 150px;
+  padding: 10px 30px;
+  font-size: 20px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.container  a:active{
+  background-color: #00336D;
+  color: #fff;
+}
+
+.container  a:hover .edge{
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.container .button{
+  margin-top: 40px;
+}
+
+.container .button .edge{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: none repeat scroll 0 0 #00336D;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+
+.container .button .edge1{
+  width: 2px;
+  -webkit-transform: translate3d(0, -100%, 0);
+  -ms-transform: translate3d(0, -100%, 0);
+  -o-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  transition-delay: 0.2s;
+}
+
+.container .button .edge2{
+  height: 2px;
+  -webkit-transform: translate3d(100%, 0, 0);
+  -ms-transform: translate3d(100%, 0, 0);
+  -o-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+
+.container .button .edge3{
+  width: 2px;
+  left:auto;
+  right: 0;
+  -webkit-transform: translate3d(0, 100%, 0);
+  -ms-transform: translate3d(0, 100%, 0);
+  -o-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  transition-delay: 0.2s;
+}
+
+.container .button .edge4{
+  height: 2px;
+  top: auto;
+  bottom: 0;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  -o-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+.container .access .tile .empty {
+  background: #00336D;
+  border-radius: 8px;
+}
+
+.container .access .tile .address {
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  border: 3px solid #00336D;
+}
+
+
+.container .access .tile {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 80%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 360px 360px auto;
+}
+
+
+.right{
+  float: right;
+}
