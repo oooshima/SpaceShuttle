@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>login</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1> <a href="index.html">Space Shuttle</a></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html#ABOUT">ABOUT</a></li>
+          <li><a href="index.html#SCHEDULE">SCHEDULE</a></li>
+          <li><a href="index.html#RECODE">RECORD</a></li>
+          <li><a href="index.html#ACCESS">ACCESS</a></li>
+          <li><a href="index.html#CONTACT">CONTACT</a></li>
+          <li id="member" class="hide"><a href="">MEMBER</a></li>
+          <li id="loginbutton" class="right"><a href="login.html">LOGIN</a></li>
+          <li id="logout" class="right hide"><a href="login.html">LOGOUT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+
+  <h1 class="header-title">ユーザー認証テスト</h1>
+
+  <div class="container">
+    <div id="input-area">
+      <input id="email" type="email" placeholder="メールアドレスを入力" required/>
+      <input id="password" type="password" placeholder="パスワードを入力" required/>
+      <button id="login">ログイン</button>
+    <!--  <button id="newuser">新規登録</button>  -->
+    </div>
+    <!--<button id="logout" class="hide">ログアウト</button>-->
+  </div>
+
+  <!-- テキスト表示用 -->
+  <p id="info"></p>
+
+  <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+  <script type="text/javascript" src ="javascript/login.js"></script>
+</body>
+</html>

@@ -258,3 +258,26 @@ nav a:hover{
 .right{
   float: right;
 }
+
+.header-title {
+  padding: 10px;
+  margin-bottom: 100px;
+  font-size: 18px;
+  border-bottom: 1px solid #aaa;
+}
+.hide {
+  display: none;
+}
+#info {
+  text-align: center;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+button{
+  margin: 10px;
+}
+
+input{
+  padding: 10px;
+}

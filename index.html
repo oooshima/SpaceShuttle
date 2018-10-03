@@ -8,9 +8,7 @@
   <link rel="stylesheet" type="text/css" href="slick-theme.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
-  <script type="text/javascript" src="javascript/index.js"></script>
-  <script type="text/javascript" src="javascript/slick.js"></script>
-  <script type="text/javascript" src="javascript/slick.min.js"></script>
+
 </head>
 <body>
 
@@ -24,7 +22,9 @@
           <li><a href="#RECODE">RECORD</a></li>
           <li><a href="#ACCESS">ACCESS</a></li>
           <li><a href="#CONTACT">CONTACT</a></li>
-          <li class="right"><a href="">LOGIN</a></li>
+          <li id="member" class="hide"><a href="">MEMBER</a></li>
+          <li id="loginbutton" class="right"><a href="login.html">LOGIN</a></li>
+          <li id="logout" class="right hide"><a href="login.html">LOGOUT</a></li>
         </ul>
       </nav>
     </div>
@@ -142,5 +142,9 @@
     <div style="padding: 100px 0">
     </div>
   </div>
+  <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+  <script type="text/javascript" src="javascript/index.js"></script>
+  <script type="text/javascript" src="javascript/slick.js"></script>
+  <script type="text/javascript" src="javascript/slick.min.js"></script>
 </body>
 </html>
