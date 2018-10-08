@@ -17,6 +17,8 @@ var loginbutton = document.getElementById('loginbutton');
 var logout = document.getElementById('logout');
 var info = document.getElementById('info');
 var member = document.getElementById('member');
+var logincontent = document.getElementById('logincontent');
+var buttonarea = document.getElementById('button-area');
 
 
 
@@ -69,18 +71,22 @@ firebase.auth().onAuthStateChanged(function(user) {
 function loginDisplay() {
   logout.classList.remove('hide');
   member.classList.remove('hide');
+  buttonarea.classList.remove('hide');
   inputarea.classList.add('hide');
   loginbutton.classList.add('hide');
+  logincontent.classList.add('hide');
 
-  info.textContent = "ログイン中です！";
+  info.textContent = "ログインしました";
 }
 
 
 function logoutDisplay() {
   logout.classList.add('hide');
   member.classList.add('hide');
+  buttonarea.classList.add('hide');
   inputarea.classList.remove('hide');
   loginbutton.classList.remove('hide');
+  logincontent.classList.remove('hide');
 
   info.textContent = "";
 }

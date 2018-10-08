@@ -83,7 +83,6 @@ nav a:hover{
 .container h3{
   color: #454545;
   font-size: 20px;
-  /*text-align: center;*/
   margin-bottom: 20px;
 }
 
@@ -150,10 +149,13 @@ nav a:hover{
 }
 
 
+
+
 .container .button {
   color: #00336D;
   letter-spacing: 3px;
   margin: 10px;
+  margin-top: 40px;
   margin-left: 150px;
   padding: 10px 30px;
   font-size: 20px;
@@ -175,9 +177,6 @@ nav a:hover{
   transform: translate3d(0, 0, 0);
 }
 
-.container .button{
-  margin-top: 40px;
-}
 
 .container .button .edge{
   display: block;
@@ -270,14 +269,42 @@ nav a:hover{
 }
 #info {
   text-align: center;
-  font-size: 4em;
+  font-size: 40px;
   font-weight: bold;
 }
 
-button{
-  margin: 10px;
+#input-area{
+  text-align: center;
 }
 
-input{
+#input-area input{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  width: 200px;
   padding: 10px;
+}
+
+#input-area button{
+  padding: 8px;
+  border-radius: 3px;
+}
+
+
+#logincontent p{
+  text-align: center;
+  padding-bottom: 10px;
+}
+#logincontent h2{
+  text-align: center;
+  color: #00336D;
+  margin: 40px 200px 30px 200px;
+  padding: 0.5em 0;/*上下の余白*/
+  border-top: solid 3px #364e96;
+  border-bottom: solid 3px #364e96;
+}
+
+#button-area{
+  text-align: center;
+  margin-left: -150px;
 }
