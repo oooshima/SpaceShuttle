@@ -270,7 +270,7 @@ nav a:hover{
 #info {
   text-align: center;
   font-size: 40px;
-  font-weight: bold;
+  color: #454545;
 }
 
 #input-area{
@@ -293,6 +293,8 @@ nav a:hover{
 
 #logincontent p{
   text-align: center;
+  color: #454545;
+  font-size: 16px;
   padding-bottom: 10px;
 }
 #logincontent h2{
